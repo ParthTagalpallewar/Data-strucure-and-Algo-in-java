@@ -1,0 +1,45 @@
+DSA Foundations
+Time & Space Complexity Analysis
+Recursion
+Divide & Conquer
+Basic DSA
+Arrays
+Linked List
+Stack
+Queue
+Basic Algorithms
+Searching and Sorting
+Hashing
+2 pointers
+Backtracking
+Maths for Programming
+Fundamentals (Binary Exponentiation, Euclidean Algorithm, etc)
+Algorithms related to prime numbers (Sieve of Eratosthenes, etc)
+Number Theory (Euler's totient, etc)
+Modular Arithmetic (Modulo inverse, Chinese remainder theorem, etc)
+Number Systems (Balanced Ternary, Gray code, etc)
+Linear Algebra
+Geometry
+Combinatorics
+Numerical Methods
+Misc (Fast Fourier transform, Polynomials, etc)
+Intermediate Algorithms
+String Manipulation
+Bit Manipulation
+Greedy
+Intermediate Data Structures
+Trees
+Set
+Map
+Heap
+Slightly Advanced Algorithms
+Dynamic Programming (DP)
+Graph DSA
+Advanced DSA
+Game Theory
+Advanced String Algorithms, Tries
+Segment Trees, Fenwick Trees
+Suffix Tree, Suffix Array
+Heavy Light Decomposition
+Disjoint Set, Graph Coloring, Network Flow
+Sqrt Decomposition
