@@ -10,9 +10,11 @@ Topic to put in stack
 1. Postfix prefix and all
 2. Divide and Conquer Approach and Dynamic Approach
 3. Divide and Conquer Applications
-    Binary Search
+    
     Merge Sort
     Quick Sort
     Strassen's Matrix multiplication
     Karatsuba Algorithm
+
+    Binary Search -> Solved Some Question -> Tree
 
