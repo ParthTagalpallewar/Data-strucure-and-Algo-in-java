@@ -1,5 +1,5 @@
 package Tree.BinaryTree;
-
+import java.util.*;
 public class BinaryTreeTraversals {
 
     public void postOrderTraversal(Node node){
@@ -21,8 +21,8 @@ public class BinaryTreeTraversals {
         }
 
         System.out.print(node.data + " -> ");
-        postOrderTraversal(node.left);
-        postOrderTraversal(node.right);
+        preOrderTraversal(node.left);
+        preOrderTraversal(node.right);
     }
 
     public void inOrderTraversal(Node node){
@@ -31,11 +31,11 @@ public class BinaryTreeTraversals {
             return; 
         }
 
-        postOrderTraversal(node.left);
+        inOrderTraversal(node.left);
 
         System.out.print(node.data + " -> ");
 
-        postOrderTraversal(node.right);
+        inOrderTraversal(node.right);
      
     }
 
@@ -56,6 +56,17 @@ public class BinaryTreeTraversals {
 
     }
 
+    public void sortedOrder(Node node){
+
+        if(node == null){
+            return;
+        }
+
+        sortedOrder(node.left);
+        System.out.print(node.data+ " -> ");
+        sortedOrder(node.right);
+    }
+   
     public static void main(String[] args) {
         
         BinaryTreeTraversals treeTraversals = new BinaryTreeTraversals();

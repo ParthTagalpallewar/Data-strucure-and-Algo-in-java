@@ -3,4 +3,6 @@ Question Solved
 1337. The K Weakest Rows in a Matrix - https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/submissions/ -> wanted to solve this question using tree
 So now need to learn tree in java
 
-
+Tree basics
+traversals such as inorder, preorder, postorder
+insert and search in binary tree

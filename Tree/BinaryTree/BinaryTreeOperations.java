@@ -29,28 +29,67 @@ public class BinaryTreeOperations {
 
         Node rootNode = new Node(10);
 
-        rootNode.left = new Node(5);
-        rootNode.right = new Node(15);
+        int arr[] = new int[5];
+        arr[0] = 5;
+        arr[1] = 11;
+        arr[2] = 1;
+        arr[3] = 9;
+        arr[4] = 19;
 
-        rootNode.left.left = new Node(1);
-        rootNode.left.right = new Node(9);
-
-        rootNode.right.left = new Node(11);
-        rootNode.right.right = new Node(19);
-
+        for(int i = 0; i<5; i++){
+            addNode(rootNode, arr[i]);
+        }
+       
         return rootNode;
 
     }
 
+    public void addNode(Node node, int data){
+        if(node == null){
+            return;
+        }
+
+        if(node.data == data){
+            return;
+        }
+   
+        if(node.data > data){
+            if(node.left == null){
+                node.left = new Node(data);
+                return;
+            }else{
+                addNode(node.left, data);
+            }
+        }
+
+        if(node.data < data){
+            if(node.right == null){
+                node.right = new Node(data);
+            }else{
+                addNode(node.right, data);
+            }
+        }
+   
+    }
     public static void main(String[] args) {
         BinaryTreeOperations operations = new BinaryTreeOperations();
+        BinaryTreeTraversals traversal = new BinaryTreeTraversals();
+
         Node rootNode = operations.buildBinaryTree();
 
         Boolean isNumPresent = operations.Search(rootNode, 3);
-        System.out.print(isNumPresent);
+        System.out.println(isNumPresent);
+
+        operations.addNode(rootNode, 3);
+
+        isNumPresent = operations.Search(rootNode, 3);
+        System.out.println(isNumPresent);
+        
+        traversal.inOrderTraversal(rootNode);
+
     }
 
-    
+
 
 }
 
