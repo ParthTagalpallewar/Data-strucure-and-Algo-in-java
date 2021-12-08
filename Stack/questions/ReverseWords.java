@@ -1,3 +1,5 @@
+package Stack.questions;
+
 import java.util.*;
 
 class ReverseWords{

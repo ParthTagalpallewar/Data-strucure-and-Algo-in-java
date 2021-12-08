@@ -1,0 +1,10 @@
+Learned About Divide and Conquer Approach
+Learned About Dynamic Programming
+Binary Search Implemented
+Merge Sort Implemented
+Quick Sort Implemented
+
+
+Question Solving 
+2089. Find Target Indices After Sorting Array - https://leetcode.com/problems/find-target-indices-after-sorting-array/
+1351. Count Negative Numbers in a Sorted Matrix- https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/

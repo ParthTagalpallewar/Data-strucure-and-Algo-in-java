@@ -1,0 +1,18 @@
+Started DSA in Java 
+Configured Java Environment and cpp Environment
+Prepared Road-map for 3-4 years
+
+Today I Solved 
+1. Reversed A String words in python and java using stack
+
+Topic to put in stack
+1. Stack problems
+1. Postfix prefix and all
+2. Divide and Conquer Approach and Dynamic Approach
+3. Divide and Conquer Applications
+    Binary Search
+    Merge Sort
+    Quick Sort
+    Strassen's Matrix multiplication
+    Karatsuba Algorithm
+

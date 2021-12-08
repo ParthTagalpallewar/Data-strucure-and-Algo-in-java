@@ -1,11 +1,12 @@
-class Stack{
+package Stack;
+class StackImplimentation{
     
     private int arr[];
     private int top;
     private int capacity;
 
     // constructor
-    Stack(int size){
+    StackImplimentation(int size){
         this.arr = new int[size];
         this.capacity = size;
         this.top = -1;
