@@ -71,6 +71,7 @@ public class BinaryTreeOperations {
         }
    
     }
+  
     public static void main(String[] args) {
         BinaryTreeOperations operations = new BinaryTreeOperations();
         BinaryTreeTraversals traversal = new BinaryTreeTraversals();

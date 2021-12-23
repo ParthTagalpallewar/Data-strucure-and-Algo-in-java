@@ -1,5 +1,4 @@
 package Tree.BinaryTree;
-import java.util.*;
 public class BinaryTreeTraversals {
 
     public void postOrderTraversal(Node node){
@@ -56,17 +55,6 @@ public class BinaryTreeTraversals {
 
     }
 
-    public void sortedOrder(Node node){
-
-        if(node == null){
-            return;
-        }
-
-        sortedOrder(node.left);
-        System.out.print(node.data+ " -> ");
-        sortedOrder(node.right);
-    }
-   
     public static void main(String[] args) {
         
         BinaryTreeTraversals treeTraversals = new BinaryTreeTraversals();
