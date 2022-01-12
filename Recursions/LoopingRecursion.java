@@ -3,7 +3,8 @@ package Recursions;
 public class LoopingRecursion {
     public static void main(String[] args) {
         // printNum(10, 1);
-        printMe(5);
+        // printMe(5);
+        reversePrinting(5);
     }
 
     public static int printNum(int num, int current){
@@ -28,5 +29,15 @@ public class LoopingRecursion {
 
         return;
 
+    }
+
+    public static void reversePrinting(int limit){
+
+        if(limit == 0){
+            return;
+        }
+
+        System.out.println(limit);
+        reversePrinting(limit-1);
     }
 }
