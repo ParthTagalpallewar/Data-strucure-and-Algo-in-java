@@ -1,2 +1,10 @@
 12-jan-2022 -> Looping using Recursion
 12-jan-2022 -> Fibonacci series
+12-jan-2022 -> Count Number of Digits Ex 100 -> 3 Digits
+12-jan-2022 -> Sum of Digits Ex. 123-> 1+2+3 = 6
+
+https://www.w3resource.com/c-programming-exercises/recursion/index.php#editorr
+6 question solved need to solve 7th next
+
+13-jan-2022 -> GCF of two Number
+
