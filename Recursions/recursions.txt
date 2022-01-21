@@ -3,9 +3,12 @@
 12-jan-2022 -> Count Number of Digits Ex 100 -> 3 Digits
 12-jan-2022 -> Sum of Digits Ex. 123-> 1+2+3 = 6
 
-https://www.w3resource.com/c-programming-exercises/recursion/index.php#editorr
-6 question solved need to solve 7th next
-
 13-jan-2022 -> GCF of two Number
 13-jan-2022 -> Palindrome checking
+
+17-jan-2022 -> reverse a string
+17-jan-2022 -> reverse a linkedlist
+
+Unsuccessful
+https://leetcode.com/problems/find-the-winner-of-the-circular-game/
 
