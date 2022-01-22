@@ -1,4 +1,4 @@
-package Recursions;
+package Recursions.Linear;
 
 public class BinaryToDecimal {
     public static void main(String[] args) {

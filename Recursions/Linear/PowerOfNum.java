@@ -1,4 +1,4 @@
-package Recursions;
+package Recursions.Linear;
 
 public class PowerOfNum {
     public static void main(String[] args) {
