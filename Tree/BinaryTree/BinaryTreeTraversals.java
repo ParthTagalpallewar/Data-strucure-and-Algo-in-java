@@ -55,15 +55,25 @@ public class BinaryTreeTraversals {
 
     }
 
+    public void printLeafs(Node node){
+        if(node.left != null) printLeafs(node.left);
+        
+        if(node.right != null) printLeafs(node.right);
+
+        if(node.left == null && node.right == null) System.out.println(node.data);
+
+    }
     public static void main(String[] args) {
         
         BinaryTreeTraversals treeTraversals = new BinaryTreeTraversals();
         Node rootNode = treeTraversals.buildBinaryTree();
 
-        treeTraversals.postOrderTraversal(rootNode);
-        System.out.println(" ");
-        treeTraversals.preOrderTraversal(rootNode);
-        System.out.println(" ");
-        treeTraversals.inOrderTraversal(rootNode);
+        // treeTraversals.postOrderTraversal(rootNode);
+        // System.out.println(" ");
+        // treeTraversals.preOrderTraversal(rootNode);
+        // System.out.println(" ");
+        // treeTraversals.inOrderTraversal(rootNode);
+
+        treeTraversals.printLeafs(rootNode);
     }
 }
