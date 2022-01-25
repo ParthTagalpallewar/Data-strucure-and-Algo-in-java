@@ -29,14 +29,10 @@ public class BinaryTreeOperations {
 
         Node rootNode = new Node(10);
 
-        int arr[] = new int[5];
-        arr[0] = 5;
-        arr[1] = 11;
-        arr[2] = 1;
-        arr[3] = 9;
-        arr[4] = 19;
+        int arr[] = {5, 15, 19, 25};
+    
 
-        for(int i = 0; i<5; i++){
+        for(int i = 0; i< arr.length; i++){
             addNode(rootNode, arr[i]);
         }
        
@@ -72,22 +68,26 @@ public class BinaryTreeOperations {
    
     }
   
+    public int countHeight(Node node){
+
+        if(node.left != null) return 1 + countHeight(node.left);
+       
+        if(node.right != null) return 1 + countHeight(node.right);
+
+        return 1; 
+    }
+
     public static void main(String[] args) {
         BinaryTreeOperations operations = new BinaryTreeOperations();
         BinaryTreeTraversals traversal = new BinaryTreeTraversals();
 
         Node rootNode = operations.buildBinaryTree();
-
-        Boolean isNumPresent = operations.Search(rootNode, 3);
-        System.out.println(isNumPresent);
-
-        operations.addNode(rootNode, 3);
-
-        isNumPresent = operations.Search(rootNode, 3);
-        System.out.println(isNumPresent);
         
         traversal.inOrderTraversal(rootNode);
 
+        int height =  operations.countHeight(rootNode);
+         System.out.println();
+        System.out.println(height);
     }
 
 
