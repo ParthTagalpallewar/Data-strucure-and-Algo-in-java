@@ -86,7 +86,7 @@ public class BinaryTreeOperations {
         traversal.inOrderTraversal(rootNode);
 
         int height =  operations.countHeight(rootNode);
-         System.out.println();
+        System.out.println();
         System.out.println(height);
     }
 
