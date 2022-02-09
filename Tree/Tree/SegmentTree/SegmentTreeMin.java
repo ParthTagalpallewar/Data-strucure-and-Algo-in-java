@@ -1,3 +1,5 @@
+package Tree.Tree.SegmentTree;
+
 import java.util.Arrays;
 
 public class SegmentTreeMin {

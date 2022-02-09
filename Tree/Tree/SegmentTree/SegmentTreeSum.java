@@ -1,3 +1,5 @@
+package Tree.Tree.SegmentTree;
+
 class SegmentTreeSum {
     int tree[]; // The array that stores segment tree nodes
 
