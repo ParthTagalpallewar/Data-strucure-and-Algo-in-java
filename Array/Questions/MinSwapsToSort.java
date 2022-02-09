@@ -8,8 +8,10 @@ public class MinSwapsToSort {
         // int[] arr = {7, 16, 14, 17, 6, 9, 5, 3, 18};
         // System.out.println(minSwaps(arr));
 
-        int value = (9 + (7 * 12)) % 12;
-        System.out.println(value);
+        // int value = (9 + (7 * 12)) % 12;
+        // System.out.println(value);
+
+        System.out.println(3 % 5);
     }
 
     public static int minSwaps(int[] arr){

@@ -3,7 +3,7 @@ package Array.Sorting.Questions;
 //User function Template for Java
 import java.util.*;
 
-class sortByFreq {
+class SortByFreq {
 
     public static void main(String[] args) {
         
