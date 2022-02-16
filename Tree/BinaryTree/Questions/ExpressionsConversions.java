@@ -51,7 +51,7 @@ public class ExpressionsConversions {
     }
 
     public static void main(String[] args) {
-        String postfix = "ab+ef*g*-"    ;
+        String postfix = "231*+9-"    ;
 
         ExpressionNode r = expressionTree(postfix);
         inorder(r);
