@@ -4,7 +4,7 @@ public class PairPain {
     
     public static void main(String[] args) {
         
-        int[] arr = {2, 5, 6, 2, 7, 8, 2, 9, 6, 2};
+        int[] arr = { 1, 2, 3, 2, 4, 1, 2, 1, 1};
 
         int ones = 0;
         int twos = 0;
@@ -49,7 +49,7 @@ public class PairPain {
         int pairs = 0;
         int ones_count = ones;
         int start = arr.length-1; 
-        
+
         while(ones_count-- > 0){
             pairs += start--;
         }
