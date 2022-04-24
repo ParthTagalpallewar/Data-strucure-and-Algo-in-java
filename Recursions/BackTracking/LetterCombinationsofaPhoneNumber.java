@@ -25,7 +25,8 @@ public class LetterCombinationsofaPhoneNumber {
 
         ArrayList<String> result = new ArrayList<String>();
 
-        String chars = map.get(up.charAt(0));
+        char a = up.charAt(0);
+        String chars = map.get(a);
         
         for(int i = 0; i < chars.length(); i++){
             result.addAll(lettersCombinations(p + chars.charAt(i), up.substring(1)));
