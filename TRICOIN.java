@@ -6,7 +6,7 @@ import java.io.*;
 class Codechef {
     public static void main(String[] args) throws java.lang.Exception {
         
-        int[] arr = {0, 1, 1, 1, 1};
+        int[] arr = {0, 1, 0, 0, 1, 0, 1, 1, 0, 1};
 
         long ans = 0;
         int count = 0;
