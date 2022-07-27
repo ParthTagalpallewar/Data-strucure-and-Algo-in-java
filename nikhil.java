@@ -10,37 +10,43 @@ class Codechef {
         int t = sc.nextInt();
 
         while (t-- > 0) {
-
-            int n = sc.nextInt();
-
-            int[] arr = new int[n];
-
-            for (int i = 0; i < n; i++) {
-                arr[i] = sc.nextInt();
-            }
-
-            int ans = 0;
-            int count = 0;
-            for (int i = 0; i < arr.length; i++) {
-
-                int curr = arr[i];
-
-                if (curr == 0) {
-                    ans += (count * (count + 1)) / 2;
-                    count = 0;
-                    continue;
-                }
-
-                if (curr == 1) {
-                    count += 1;
-                }
-
-            }
-            if (count != 0) {
-                ans += (count * (count + 1)) / 2;
-            }
-
-            System.out.println(ans);
+            String s = sc.next();
+            System.out.println(solve(s));
         }
+    }
+
+    public static int solve(String s) {
+
+        boolean isU = s.charAt(0) == 'U';
+
+        int u_count = isU ? 1 : 0;
+        int s_count = isU ? 0 : 1;
+
+        for (int i = 1; i < s.length(); i++) {
+
+            char curr_char = s.charAt(i);
+
+            if (isU) {
+
+                if (curr_char == 'U')
+                    continue;
+
+                s_count += 1;
+
+            }
+
+            else {
+                if (curr_char == 'D')
+                    continue;
+
+                u_count += 1;
+
+            }
+
+            isU = !isU;
+
+        }
+
+        return Math.min(u_count, s_count);
     }
 }
