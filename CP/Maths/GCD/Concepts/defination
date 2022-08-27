@@ -1,0 +1,13 @@
+GCD (Greatest Common Divisor) or HCF (Highest Common Factor) or GCF (Greatest Common Factor)
+
+* For a set of positive integers (a, b), the greatest common divisor is defined as the greatest positive number which is a common factor of both the positive integers (a, b). 
+
+*  GCD of any two numbers is never negative or 0 as the least positive integer common to any two numbers is always 1.
+
+* There are two ways to determine the greatest common divisor of two numbers:
+
+    * By finding the common divisors
+    * By Euclid's algorithm
+
+
+

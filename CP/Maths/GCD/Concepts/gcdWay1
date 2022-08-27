@@ -1,0 +1,21 @@
+* How to Find the Greatest Common Divisor?
+
+For a set of two positive integers (a, b) we use the below-given steps to find the greatest common divisor:
+
+Step 1: Write the divisors of positive integer "a".
+Step 2: Write the divisors of positive integer "b".
+Step 3: Enlist the common divisors of "a" and "b".
+Step 4: Now find the divisor which is the highest of both "a" and "b".
+
+Example: Find the greatest common divisor of 13 and 48.
+Solution: We will use the below steps to determine the greatest common divisor of (13, 48).
+
+Divisors of 13 are 1, and 13.
+Divisors of 48 are 1, 2, 3, 4, 6, 8, 12, 16, 24 and 48.
+
+The common divisor of 13 and 48 is 1.
+The greatest common divisor of 13 and 48 is 1.
+
+Thus, GCD(13, 48) = 1.
+
+

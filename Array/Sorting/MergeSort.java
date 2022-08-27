@@ -1,84 +1,66 @@
 package Array.Sorting;
 
+import java.util.Arrays;
+
 public class MergeSort {
     public static void main(String[] args) {
-        
-        int arr[] = {9, 8, 7, 5, 4, 3};
+        int arr[] = {5, 4, 3, 2, 1};
         mergeSort(arr, 0, arr.length-1);
 
-        display(arr);
-
+        System.out.println(Arrays.toString(arr));
     }
 
     public static void mergeSort(int[] arr, int left, int right){
-        if(left < right){
+        if(left >= right) return;
 
-            int middle = (left + right) / 2;
+        int middle = left + (right-left) /2;
 
-            mergeSort(arr, left, middle);
-            mergeSort(arr, middle+1, right);
+        mergeSort(arr, left, middle);
+        mergeSort(arr, middle+1, right);
 
-            merge(arr, left, middle, right);
-            
-        }
+        merge(arr, left, middle, right);
+
     }
 
-    public static void merge(int arr[], int left, int middle, int right ) {
-        
-        int left_arr_size = middle - left + 1;
-        int right_arr_size = right - middle;
-        
-        int left_arr[] = new int[left_arr_size];
-        int right_arr[] = new int[right_arr_size];
+    public static void merge(int[] arr, int left, int middle, int right){
+ 
+        int left_n = middle-left+1;
+        int right_n = right-middle;
 
-        int i = 0, j = 0;
+        int[] left_arr = new int[left_n];
+        int[] right_arr = new int[right_n];
 
-        for(i = 0; i < left_arr_size; i++){
-            left_arr[i] = arr[left + i];
-        }
-
-        for(j = 0; j < right_arr_size; j++){
-            right_arr[j] = arr[middle + 1 + j];
-        }
-
+        for(int i=0; i<left_n; i++) left_arr[i] = arr[left+i];
+        for(int i=0; i<right_n; i++) right_arr[i] = arr[middle+1+i];
 
         int k = left;
-        i = 0;
-        j = 0;
+        int i = 0;
+        int j = 0;
 
-        while(i < left_arr_size && j < right_arr_size){
+        while(i < left_n && j < right_n){
 
-            if( left_arr[i] <= right_arr[j]){
+            if(left_arr[i] > right_arr[j]){
                 arr[k] = left_arr[i];
-                i++;
-            }
-            else{
+                i += 1;
+            }else{
                 arr[k] = right_arr[j];
-                j++;
+                j += 1;
             }
-            k++;
+
+            k += 1;
+
         }
 
-        while(i < left_arr_size){
+        while(i < left_n){
             arr[k] = left_arr[i];
-            k++;
-            i++;
+            i+=1;
+            k+=1;
         }
 
-        while(j < right_arr_size){
+        while(j < right_n){
             arr[k] = right_arr[j];
-            k++;
-            j++;
-        }
-
-
-
-    }
-
-    public static void display(int arr[])
-    {
-        for (int i = 0; i < arr.length; ++i) {
-            System.out.print(arr[i] + " ");
+            j+=1;
+            k+=1;
         }
     }
 }

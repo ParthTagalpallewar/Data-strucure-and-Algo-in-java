@@ -1,0 +1,32 @@
+
+* Finding Greatest Common Divisor by LCM Method
+
+As per the LCM Method for the greatest common divisor, 
+the GCD of two positive integers (a, b) can be calculated by using the following formula:
+
+        GCD (a, b) = a * b / lcm(a, b)
+
+
+
+Greatest Common Divisor using LCM Method
+
+The steps to calculate the GCD of (a, b) using the LCM method is:
+
+Step 1: Find the product of a and b.
+Step 2: Find the least common multiple (LCM) of a and b.
+Step 3: Divide the values obtained in Step 1 and Step 2.
+Step 4: The obtained value after division is the greatest common divisor of (a, b).
+Example: Find the greatest common divisor of 15 and 70 using the LCM method.
+Solution: The greatest common divisor of 15 and 70 can be calculated as:
+
+----------------------------------------------------------------------------
+
+The product of 15 and 70 is given as, 15 × 70
+
+The LCM of (15, 70) is 210.
+
+GCD (15, 20) = (15 × 70)/ 210 = 5.
+
+∴ The greatest common divisor of (15, 70) is 5.
+
+----------------------------------------------------------------------------
