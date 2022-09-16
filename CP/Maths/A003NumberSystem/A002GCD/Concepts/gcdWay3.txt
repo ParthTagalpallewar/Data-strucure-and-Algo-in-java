@@ -22,7 +22,7 @@ Find the GCD of 12 and 10 using Euclid's Algorithm.
 Solution: The GCD of 12 and 10 can be found using the below steps:
 a = 12 and b = 10
 a≠0 and b≠0
-In quotient remainder form we can write 12 = 10 × 1 + 2
+In quotient remainder form we can write /
 Thus, GCD (10, 2) is to be found, as GCD(12, 10) = GCD (10, 2)
 
 Now, a = 10 and b = 2

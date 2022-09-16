@@ -1,4 +1,4 @@
-package CP.Maths.GCD.BasicProgram;
+package CP.Maths.A003NumberSystem.A002GCD.BasicProgram;
 
 public class gcd_1 {
     public static void main(String[] args) {

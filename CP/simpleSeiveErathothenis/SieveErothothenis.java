@@ -4,6 +4,12 @@ import java.util.*;
 
 // https://www.geeksforgeeks.org/sieve-of-eratosthenes/
 
+// Algorithm 
+// step 1. create true array of n+1
+// step 2. loop i from 2 to under root of n
+// step 3. if array[i] is true then make false to each array element which is multiple of i till n
+// step 4. loop over 2 to n and print all prime numbers
+
 public class SieveErothothenis {
 
     public static void main(String[] args) {
