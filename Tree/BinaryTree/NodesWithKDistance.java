@@ -1,12 +1,10 @@
-package Tree.BinaryTree.Questions.NodesAtDistanceK;
+package Tree.BinaryTree;
 
-import Tree.BinaryTree.BinaryTree;
-import Tree.BinaryTree.Node;
 import java.util.*;
 
-public class NodesAtDistanceK extends BinaryTree{
+public class NodesWithKDistance extends BinaryTree{
     public static void main(String[] args) {
-        NodesAtDistanceK instance = new NodesAtDistanceK();
+        NodesWithKDistance instance = new NodesWithKDistance();
 
         ArrayList<Integer> answer = instance.nodesAtDistanceK(instance.binaryTree, 2, instance.binaryTree.left);
         System.out.println(answer);
