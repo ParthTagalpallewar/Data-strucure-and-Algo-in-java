@@ -1,6 +1,5 @@
 package CP.Maths.A005FibonacciSeries.programs;
 
-import java.util.Arrays;
 
 public class A002NFiboNumber {
     public static void main(String[] args) {

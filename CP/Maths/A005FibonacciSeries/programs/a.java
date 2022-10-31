@@ -1,6 +1,5 @@
 package CP.Maths.A005FibonacciSeries.programs;
 
-import java.util.Arrays;
 
 public class a {
         public static void main(String[] args) {
