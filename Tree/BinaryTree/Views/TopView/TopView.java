@@ -1,9 +1,9 @@
 package Tree.BinaryTree.Views.TopView;
 
+import java.util.*;
+
 import Tree.BinaryTree.BinaryTree;
 import Tree.BinaryTree.Node;
-
-import java.util.*;
 
 public class TopView extends BinaryTree{
     public static void main(String[] args) {

@@ -1,4 +1,7 @@
-package Tree.BinaryTree;
+package Tree.BinaryTree.Questions;
+
+import Tree.BinaryTree.BinaryTree;
+import Tree.BinaryTree.Node;
 
 public class LowestCommonAncestor extends BinaryTree{
     public static void main(String[] args) {

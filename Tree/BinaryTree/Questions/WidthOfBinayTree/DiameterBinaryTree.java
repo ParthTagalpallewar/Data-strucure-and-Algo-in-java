@@ -1,4 +1,7 @@
-package Tree.BinaryTree;
+package Tree.BinaryTree.Questions.WidthOfBinayTree;
+
+import Tree.BinaryTree.BinaryTree;
+import Tree.BinaryTree.Node;
 
 public class DiameterBinaryTree extends BinaryTree {
     public static void main(String[] args) {

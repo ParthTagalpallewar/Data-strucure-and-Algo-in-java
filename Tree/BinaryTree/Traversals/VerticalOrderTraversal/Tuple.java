@@ -1,7 +1,6 @@
 package Tree.BinaryTree.Traversals.VerticalOrderTraversal;
 
 import Tree.BinaryTree.Node;
-
 public class Tuple {
     int vo;
     int ho;

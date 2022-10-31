@@ -1,4 +1,8 @@
-package Tree.BinaryTree;
+package Tree.BinaryTree.Questions;
+
+
+import Tree.BinaryTree.BinaryTree;
+import Tree.BinaryTree.Node;
 
 public class IdenticalTree extends BinaryTree{
     public static void main(String[] args) {

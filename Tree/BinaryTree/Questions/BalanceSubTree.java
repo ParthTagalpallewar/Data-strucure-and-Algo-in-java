@@ -1,7 +1,11 @@
-package Tree.BinaryTree;
+package Tree.BinaryTree.Questions;
 
-import java.util.Arrays;
 import java.util.List;
+
+import Tree.BinaryTree.BinaryTree;
+import Tree.BinaryTree.Node;
+import Tree.BinaryTree.Traversals.BinaryTreeTraversals;
+
 
 public class BalanceSubTree extends BinaryTree{
     public static void main(String[] args) {

@@ -1,11 +1,12 @@
-package Tree.BinaryTree.Traversals;
+package Tree.BinaryTree.Traversals.VerticalOrderTraversal;
 
-import Tree.BinaryTree.Node;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 import java.util.Stack;
+
+import Tree.BinaryTree.Node;
 
 public class BreathFirstSearch {
     

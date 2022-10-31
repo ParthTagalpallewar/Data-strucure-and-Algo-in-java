@@ -1,5 +1,7 @@
 package Tree.BinaryTree;
 
+import Tree.BinaryTree.Traversals.RecursiveTraversals;
+
 public class BinaryTree {
 
     public Node binaryTree = null;
@@ -103,12 +105,13 @@ public class BinaryTree {
     }   
     public static void main(String[] args) {
         BinaryTree operations = new BinaryTree();
-        BinaryTreeTraversals traversal = new BinaryTreeTraversals();
+        RecursiveTraversals traversal = new RecursiveTraversals();
 
         Node rootNode = operations.buildBinaryTree();
         
         traversal.inOrderTraversal(rootNode);
     }
 }
+
 
 

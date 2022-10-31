@@ -1,8 +1,11 @@
-package Tree.BinaryTree;
+package Tree.BinaryTree.Traversals;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+
+import Tree.BinaryTree.BinaryTree;
+import Tree.BinaryTree.Node;
 
 public class BinaryTreeTraversals extends BinaryTree{
 
