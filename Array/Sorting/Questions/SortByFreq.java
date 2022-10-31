@@ -55,7 +55,7 @@ class SortByFreq {
 
         ArrayList<Holding> holdings = new ArrayList<Holding>();
 
-        for (Map.Entry element : map.entrySet()) {
+        for (Map.Entry<Integer, Integer> element : map.entrySet()) {
             holdings.add(new Holding((int) element.getKey(), (int) element.getValue()));
         }
 
