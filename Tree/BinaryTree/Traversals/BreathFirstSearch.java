@@ -98,7 +98,6 @@ public class BreathFirstSearch {
 	{
         Queue<Node> queue = new LinkedList<Node>();
 	    int final_sum = root.data;
-
 	    
 	    queue.add(root);
 

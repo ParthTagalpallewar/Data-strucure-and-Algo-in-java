@@ -1,6 +1,38 @@
 package Tree.BinaryTree;
-public class BinaryTreeTraversals {
 
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
+public class BinaryTreeTraversals extends BinaryTree{
+
+    public void inOrderTraversal(Node node){
+        
+        if( node == null){
+            return; 
+        }
+
+        inOrderTraversal(node.left);
+
+        System.out.print(node.data + " -> ");
+
+
+        inOrderTraversal(node.right);
+     
+    }
+
+    
+    public void preOrderTraversal(Node node){
+        if (node == null) {
+            return;
+        }
+
+        System.out.print(node.data + " -> ");
+        preOrderTraversal(node.left);
+        preOrderTraversal(node.right);
+    }
+
+    
     public void postOrderTraversal(Node node){
         
         if( node == null){
@@ -14,66 +46,37 @@ public class BinaryTreeTraversals {
         
     }
 
-    public void preOrderTraversal(Node node){
-        if (node == null) {
-            return;
+    public List<List<Integer>> levelOrderTraversal(Node node){
+        
+        if(node == null) return null;
+
+        Queue<Node> queue = new LinkedList<Node>();
+        List<List<Integer>> results = new LinkedList<List<Integer>>();
+
+        queue.add(node);
+
+        while(!queue.isEmpty()){
+
+            int level_num = queue.size();
+
+            List<Integer> subList = new LinkedList<Integer>();
+
+            for(int i = 0; i < level_num; i++){
+                if (queue.peek().left != null)
+                    queue.add(queue.peek().left);
+                if (queue.peek().right != null)
+                    queue.add(queue.peek().right);
+
+                subList.add(queue.poll().data);
+            }
+
+            results.add(subList);
+           
         }
 
-        System.out.print(node.data + " -> ");
-        preOrderTraversal(node.left);
-        preOrderTraversal(node.right);
-    }
-
-    public void inOrderTraversal(Node node){
+        return results;
         
-        if( node == null){
-            return; 
-        }
-
-        inOrderTraversal(node.left);
-
-        System.out.print(node.data + " -> ");
-
-        inOrderTraversal(node.right);
-     
-    }
-
-    public Node buildBinaryTree(){
-
-        Node rootNode = new Node(10);
-
-        rootNode.left = new Node(5);
-        rootNode.right = new Node(15);
-
-        rootNode.left.left = new Node(1);
-        rootNode.left.right = new Node(9);
-
-        rootNode.right.left = new Node(11);
-        rootNode.right.right = new Node(19);
-
-        return rootNode;
 
     }
 
-    public void printLeafs(Node node){
-        if(node.left != null) printLeafs(node.left);
-        
-        if(node.right != null) printLeafs(node.right);
-
-        if(node.left == null && node.right == null) System.out.println(node.data);
-
-    }
-    public static void main(String[] args) {
-        
-        BinaryTreeTraversals treeTraversals = new BinaryTreeTraversals();
-        Node rootNode = treeTraversals.buildBinaryTree();
-
-        // treeTraversals.postOrderTraversal(rootNode);
-        // System.out.println(" ");
-        // treeTraversals.preOrderTraversal(rootNode);
-        // System.out.println(" ");
-        // treeTraversals.inOrderTraversal(rootNode);
-
-        treeTraversals.printLeafs(rootNode);
-    }
 }

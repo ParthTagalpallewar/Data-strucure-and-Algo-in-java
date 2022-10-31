@@ -1,6 +1,7 @@
 package CP.Maths.A003NumberSystem.A003ExtendedGcd;
 
 
+
 class program {
     // extended Euclidean Algorithm
     public static GcdTriplet gcdExtended(int a, int b) {
@@ -47,6 +48,6 @@ class GcdTriplet{
 
     @Override
     public String toString(){
-        return "(x: "+this.x+", y: " + y + " gcd: "+gcd+")";
+        return "(x: "+x+", y: " + y + " gcd: "+gcd+")";
     }
 }

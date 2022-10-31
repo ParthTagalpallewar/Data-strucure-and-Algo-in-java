@@ -1,6 +1,13 @@
 package Tree.BinaryTree;
 
-public class BinaryTreeOperations {
+public class BinaryTree {
+
+    public Node binaryTree = null;
+
+    public BinaryTree(){
+        System.out.println("Extending Binary Tree Creates call its constructor");
+        binaryTree = buildBinaryTree();
+    }
     
     public Boolean Search(Node node, int data){
         if(node == null){
@@ -27,14 +34,32 @@ public class BinaryTreeOperations {
 
     public Node buildBinaryTree() {
 
-        Node rootNode = new Node(10);
+        // level 1
+        Node rootNode = new Node(1);
 
-        int arr[] = {5, 15, 19, 25};
-    
+        // level 2
+        rootNode.left = new Node(2);
+        rootNode.right = new Node(3);
 
-        for(int i = 0; i< arr.length; i++){
-            addNode(rootNode, arr[i]);
-        }
+        // // level 3
+        rootNode.left.left = new Node(4);
+        rootNode.left.right = new Node(5);
+
+        rootNode.right.left = new Node(6);
+        rootNode.right.right = new Node(7);
+
+        // // level 4
+        // rootNode.left.left.left = new Node(8);
+        // rootNode.left.left.right = new Node(9);
+
+        // rootNode.left.right.left = new Node(10);
+        // rootNode.left.right.right = new Node(11);
+
+        // rootNode.right.left.left = new Node(12);
+        // rootNode.right.left.right = new Node(13);
+
+        // rootNode.right.right.left = new Node(14);
+        // rootNode.right.right.right = new Node(15);
        
         return rootNode;
 
@@ -68,30 +93,22 @@ public class BinaryTreeOperations {
    
     }
   
-    public int countHeight(Node node){
+    public void printLeafs(Node node){
+        if(node.left != null) printLeafs(node.left);
+        
+        if(node.right != null) printLeafs(node.right);
 
-        if(node.left != null) return 1 + countHeight(node.left);
-       
-        if(node.right != null) return 1 + countHeight(node.right);
+        if(node.left == null && node.right == null) System.out.println(node.data);
 
-        return 1; 
-    }
-
+    }   
     public static void main(String[] args) {
-        BinaryTreeOperations operations = new BinaryTreeOperations();
+        BinaryTree operations = new BinaryTree();
         BinaryTreeTraversals traversal = new BinaryTreeTraversals();
 
         Node rootNode = operations.buildBinaryTree();
         
         traversal.inOrderTraversal(rootNode);
-
-        int height =  operations.countHeight(rootNode);
-        System.out.println();
-        System.out.println(height);
     }
-
-
-
 }
 
 

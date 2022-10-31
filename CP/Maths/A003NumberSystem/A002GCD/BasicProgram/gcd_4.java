@@ -28,8 +28,6 @@ public class gcd_4 {
     }
 
     public static int gcd2(int a, int b){
-        if(b == 0) return a;
-
-        return gcd(b, a%b);
+       return (b == 0) ? a :  gcd(b, a%b);
     }
 }

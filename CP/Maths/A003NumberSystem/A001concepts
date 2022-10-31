@@ -1,4 +1,7 @@
 Topics cover
 
 1. GCD
-2. Eculdian formula
+2. Eculdian formula :- 
+    
+    In this, if we have a and b then we get gcd of them with x and y
+    ax + by = gcd(a, b);

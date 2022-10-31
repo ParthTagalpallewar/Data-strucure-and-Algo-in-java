@@ -1,5 +1,8 @@
 package CP.Maths.A004BinomialCoefficient;
 
+//  the binomial coefficient is used to denote the number of possible ways to choose a subset 
+//  of objects of a given numerosity from a larger set. 
+
 public class A001Basics {
     public static void main(String[] args) {
         int n=4;
