@@ -1,5 +1,6 @@
 package Tree.BinaryTree.Questions;
 
+import java.io.Serializable;
 import java.util.*;
 
 
@@ -7,7 +8,7 @@ import java.util.*;
 import Tree.BinaryTree.BinaryTree;
 import Tree.BinaryTree.Node;
 
-public class RootToNode extends BinaryTree {
+public class RootToNode extends BinaryTree implements Serializable{
 
   public static void main(String[] args) {
     RootToNode instance = new RootToNode();
