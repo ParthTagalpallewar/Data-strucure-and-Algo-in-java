@@ -1,0 +1,61 @@
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
+import java.util.*;
+
+public class Sets {
+    public static void main(String[] args) {
+        HashSet a = new HashSet<Integer>();
+        TreeSet b = new TreeSet<Integer>();
+        LinkedHashSet c = new LinkedHashSet<Integer>();
+
+        a.add(10);
+
+        String str = "ab45c7";
+        int n = str.length();
+
+        HashMap<Character, Integer> map = constructMap();
+
+        int sum = 0;
+        
+        int i = 0;
+        while(i < n){
+            char curr_char = str.charAt(i);
+
+            if(!map.containsKey(curr_char)) {
+                i += 1;
+                continue;
+            }
+            int curr = 0;
+
+            while(i < n && map.containsKey(str.charAt(i))){
+                curr *= 10;
+                curr += map.get(str.charAt(i));
+                i += 1;
+            }
+
+            sum += curr;
+            i += 1;
+        }
+
+        System.out.println(sum);
+    }
+
+    public static HashMap<Character, Integer> constructMap(){
+        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+
+        map.put('1', 1);
+        map.put('2', 2);
+        map.put('3', 3);
+        map.put('4', 4);
+        map.put('5',5);
+        map.put('6', 6);
+        map.put('7', 7);
+        map.put('8',8);
+        map.put('9', 9);
+
+        return map;
+
+    }
+}

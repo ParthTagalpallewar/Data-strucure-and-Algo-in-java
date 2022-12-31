@@ -9,7 +9,7 @@ public class BoundaryTraversal extends BinaryTree {
     public static void main(String[] args) {
         BoundaryTraversal instance = new BoundaryTraversal();
         
-        ArrayList<Integer> arr = instance.boundaryTraversal(instance.binaryTree);
+        ArrayList<Integer> arr = instance.boundaryTraversal1(instance.binaryTree);
         
         System.out.println(arr);
     }
@@ -70,4 +70,37 @@ public class BoundaryTraversal extends BinaryTree {
     private boolean isLeafNode(Node node){
         return (node.left == null) && (node.right == null);
     }
+
+    public ArrayList<Integer> boundaryTraversal1(Node node){
+        ArrayList<Integer> result = new ArrayList<Integer>();
+
+        Queue<Node> queue = new LinkedList<Node>();
+        queue.add(node);
+
+        while(!queue.isEmpty()){
+            int size = queue.size();
+
+            for(int i=0; i<size; i++){
+                Node curr = queue.poll();
+
+                if(isLeafNode(curr) || i==0 || i==size-1) result.add(curr.data);
+
+                if(node.left != null) queue.add(node.left);
+                if(node.right != null) queue.add(node.right);
+            }
+        }
+
+        return result;
+    }
 }
+/* 
+        1
+    2       3
+
+4      5 6      7
+
+traversal -> 1 2 4 5 6 7 3 1
+  
+*/
+
+/* */

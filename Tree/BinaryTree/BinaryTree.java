@@ -40,11 +40,12 @@ public class BinaryTree {
         Node rootNode = new Node(1);
 
         // level 2
-        rootNode.left = new Node(21);
+        rootNode.left = new Node(2);
         rootNode.right = new Node(3);
 
         // // level 3
         rootNode.left.left = new Node(4);
+        rootNode.left.right = new Node(5);
         
 
         rootNode.right.left = new Node(6);
