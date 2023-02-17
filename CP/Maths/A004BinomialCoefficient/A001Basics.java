@@ -5,7 +5,7 @@ package CP.Maths.A004BinomialCoefficient;
 
 public class A001Basics {
     public static void main(String[] args) {
-        int n=4;
+        int n=2;
         int k=1;
 
         System.out.println(binomialCoefficient(n, k));

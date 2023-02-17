@@ -1,0 +1,31 @@
+Basics :- https://www.codingninjas.com/codestudio/library/file-management-in-operating-system
+File_Organization Basic - https://www.1000sourcecodes.com/2012/09/os-file-organization.html
+    https://peda.net/kenya/css/subjects/computer-studies/form-three/driac2/data-processing/fom
+    https://www.tutorialspoint.com/operating_system/os_file_system.htm
+
+
+Secondary Storage management
+ https://www.cs.cmu.edu/afs/cs/user/clamen/OODBMS/Manifesto/htManifesto/node12.html#:~:text=Secondary%20storage%20management%20is%20a,path%20selection%20and%20query%20optimization.
+    1. Index organization
+    2. File clustering
+        https://www.javatpoint.com/dbms-cluster-file-organization
+    3. Data Buffering
+        https://www.javatpoint.com/buffering-in-operating-system
+    4. Access path
+        https://www.learn.geekinterview.com/data-warehouse/dw-basics/what-is-access-path.html
+
+
+
+
+
+ PDF of all topics
+ https://www3.cs.stonybrook.edu/~kifer/Courses/cse306/lectures/chap12.pdf
+
+FCFS Scan:- 
+    https://www.tutorialandexample.com/fcfs-disk-scheduling-algorithm
+
+C-Scan
+    https://www.geeksforgeeks.org/c-scan-disk-scheduling-algorithm/
+
+SSTF SCAN-
+    https://www.codingninjas.com/codestudio/library/sstf-disk-scheduling-algorithm

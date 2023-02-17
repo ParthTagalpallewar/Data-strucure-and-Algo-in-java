@@ -6,8 +6,9 @@ formulas
 
 3. (a*b) % mod = ((a%mod) * (b%mod)) % mod;
 
-https://www.geeksforgeeks.org/modular-arithmetic/
+4. (a / b) mod m = (a x (inverse of b if exists)) mod m
 
+https://www.geeksforgeeks.org/modular-arithmetic/
 
 Modular Inverse:
 
@@ -17,4 +18,3 @@ if (a x b) mod m = 1 then b is the modular inverse of a.
 
 Example: a = 5, m = 7 (5 x 3) % 7 = 1 hence, 3 is modulo inverse of 5 under 7.
 
-4. (a / b) mod m = (a x (inverse of b if exists)) mod m

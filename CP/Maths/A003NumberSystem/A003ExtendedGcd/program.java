@@ -1,13 +1,11 @@
 package CP.Maths.A003NumberSystem.A003ExtendedGcd;
 
-
-
 class program {
     // extended Euclidean Algorithm
     public static GcdTriplet gcdExtended(int a, int b) {
        
         if(b == 0){
-            return new GcdTriplet(1, 1, a);
+            return new GcdTriplet(0, 1, a);
         }
 
         GcdTriplet temp = gcdExtended(b, a%b);
