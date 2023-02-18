@@ -20,6 +20,10 @@ public:
 		this->right = NULL;
 	}
 
+    void print(){
+        cout << "Left :" << (left == NULL) << " Right: " << (right == NULL) << " Data: " << data << endl;
+    }
+
 	friend class BinaryTree;
 };
 
@@ -94,24 +98,15 @@ public:
 
 	void in_order(Node *node){
 
-        cout << "1" << endl;
+        node->print();
+
 
 		if(node == NULL) return;
 
-        cout << " 2" << endl;
-
-        if(node->left != NULL)
-		    in_order(node->left);
-
-        cout << " 2" << endl;
-
+		in_order(node->left);
         cout << node->data << " " << endl;
+        in_order(node->right);
 
-        cout << "3" << endl;
-        if(node->right != NULL)
-            in_order(node->right);
-
-        cout << "4" << endl;
     }
 
 
@@ -122,15 +117,8 @@ int main(){
     BinaryTree tree;
 
     tree.create(10);
-    tree.get_root();
-    // tree.in_order(tree.get_root());
-
-    // tree.insert();
-
-    // cout << "After Insert" << endl;
-
-    // tree.in_order(tree.get_root());
     
+    tree.in_order(tree.get_root());
 
     return 0;
 }

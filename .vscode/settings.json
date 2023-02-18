@@ -7,5 +7,9 @@
     "cSpell.words": [
         "curr",
         "tagalpallewar"
-    ]
+    ],
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp"
+    }
 }
