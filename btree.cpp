@@ -30,6 +30,10 @@ private:
 
 public:
 
+    BinaryTree(){
+        this->root = NULL;
+    }
+
 	void create(int data){
 
 		Node new_node(data);
@@ -38,12 +42,14 @@ public:
 			root = &new_node;
 			q.push(root);
 		}
-	}
+    }
 
-    void insert(int data){
+    void insert(){
 
-        while (!q.empty())
+
+        while (q.empty() == false)
         {
+
 
             Node *parent;
             parent = q.front();
@@ -83,19 +89,30 @@ public:
     }
 
 	Node* get_root(){
-        cout << root->data << endl;
-
 		return root;
 	}
 
 	void in_order(Node *node){
 
+        cout << "1" << endl;
+
 		if(node == NULL) return;
 
-		in_order(node->left);
-		cout << node->data << " " << endl;
-		in_order(node->right);
-	}
+        cout << " 2" << endl;
+
+        if(node->left != NULL)
+		    in_order(node->left);
+
+        cout << " 2" << endl;
+
+        cout << node->data << " " << endl;
+
+        cout << "3" << endl;
+        if(node->right != NULL)
+            in_order(node->right);
+
+        cout << "4" << endl;
+    }
 
 
 };
@@ -105,9 +122,14 @@ int main(){
     BinaryTree tree;
 
     tree.create(10);
+    tree.get_root();
+    // tree.in_order(tree.get_root());
 
-    Node *root = tree.get_root();
+    // tree.insert();
 
+    // cout << "After Insert" << endl;
+
+    // tree.in_order(tree.get_root());
     
 
     return 0;
